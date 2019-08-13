@@ -1,0 +1,4 @@
+ngrok             0.0.1
+python            3.7.3
+line-bot-sdk      1.12.1
+requests          2.22.0
