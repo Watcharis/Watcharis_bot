@@ -10,6 +10,6 @@ def data_text():
 
     db.word.insert_one(data)
 
-d = data_text()
-print(d)
+#d = data_text()
+#print(d)
 
