@@ -42,12 +42,11 @@ class ReplyMessages:
 
 
     def refect_token(self,text,token):
-        # try:
-        #     print(self.query)
-        #     text_from_db = self.query(text)
-        # except Exception as e:
-        #     print(e)
-        # print(text_from_db)
+        try:
+            text_from_db = self.query(text)
+        except Exception as e:
+            print(e)
+        print(text_from_db)
         
         headers = self.headers
         url = self.url
@@ -56,7 +55,7 @@ class ReplyMessages:
             "messages":[
                 {
                     "type":"text",
-                    "text": text
+                    "text": text_from_db
                 }
             ]
         }
@@ -145,7 +144,7 @@ class ReplyMessages:
         print("text: ", text)
         
         try:
-            messages = self.refect_token('test', token)
+            messages = self.refect_token(text, token)
             print(json.dumps(messages))
             req = requests.post(url = self.url , data=json.dumps(messages), headers=self.headers)
         except Exception as e:

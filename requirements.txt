@@ -3,3 +3,4 @@ Flask
 requests
 line-bot-sdk
 pymongo
+dnspython
