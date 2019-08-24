@@ -4,7 +4,7 @@ from databases import data_word
 def data_text():
     db = data_word()
     data = {
-        "ask" : "สวสัดีจ้า",
+        "ask" : "สวัสดีจ้า",
         "ans" : "สวสัดีครับ"
     }
 
