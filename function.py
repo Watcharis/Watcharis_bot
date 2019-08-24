@@ -43,8 +43,7 @@ class ReplyMessages:
 
     def refect_token(self,text,token):
         try:
-            print("foo")
-            print(text)
+            print(self.query)
             text_from_db = self.query(text)
         except Exception as e:
             print(e)
