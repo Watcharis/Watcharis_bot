@@ -10,6 +10,6 @@ def data_monly():
     db = client["monly"]
     return db
 
-d = data_word()
-d.test.insert({"test": "test"})
-print(d.test.find_one({"test":"test"}))
+# d = data_word()
+# d.test.insert({"test": "test"})
+# print(d.test.find_one({"test":"test"}))git 

@@ -16,23 +16,8 @@ def query(text):
     #         print(item['text'])
     return body
 
-# test = query("สวสัดีจ้า")
-# print(test)
 
 
 
 
 
-# class Query:
-
-#     def __init__(self):
-#         self.query = query
-
-
-# query = Query()
-
-
-# result = query.query("xxx")
-
-
-# print(result)
